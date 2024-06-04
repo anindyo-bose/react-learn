@@ -1,0 +1,23 @@
+{
+  "name": "react-learn",
+  "version": "1.0.0",
+  "description": "this is new app by Anindyo",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anindyo-bose/react-learn.git"
+  },
+  "keywords": [],
+  "author": "Anindyo Bose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anindyo-bose/react-learn/issues"
+  },
+  "homepage": "https://github.com/anindyo-bose/react-learn#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
