@@ -18,3 +18,6 @@ React Functional Component is a Javascript Function
 
 Component Coposition - rendering a component inside a Functional Component
 wrapping the const/variable/functional component with the curly braces helps not only to for rendering the data but also sanitize that
+
+props: property is something that we can pass to the component.
+props are just normal arguement to a function.
