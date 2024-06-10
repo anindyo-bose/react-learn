@@ -1,1 +1,20 @@
-Test File
+react.creatElement returns an object. when we render the element to the dom then it become HTML element.
+ReactDom helps to convert the react element to HTML element
+
+JSX is a JS syntax to create react elements, It is not an HTML in Javascript. its a html or xml like syntax
+JSX IS transpiled before it reaches to the js engine and its transpiling is done by the babel. 
+JSX attributes has to be camelcase
+Multiple line jsx is needed to wrap between round brackets, That is how babel understands starting and the ending of the element
+JSX=>Babel transpiles it to react.createelement => ReactElement-Js-Object => HTMLElement(render)
+
+React Component -> 
+ Class Based Component // old way 
+ Functional Component // new way
+
+React Functional Component is a Javascript Function
+    const HeadingComponent = () =>{
+        return <h1>Hey This is a implementation of react functional component</h1>;
+    }
+
+Component Coposition - rendering a component inside a Functional Component
+wrapping the const/variable/functional component with the curly braces helps not only to for rendering the data but also sanitize that

@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const parent = React.createElement('div', {id: 'parent'}, [
-    React.createElement('div', {id: 'child'}, [
-        React.createElement('h1', {}, 'Anindyo'),
-        React.createElement('p2', {}, 'What you wanna do?s')
-    ]),
-    React.createElement('div', {id: 'child2'}, [
-        React.createElement('h1', {}, 'Anindyo'),
-        React.createElement('p2', {}, 'This is a paragraph')
-    ]),
-]);
+
+// React way of creating element
+const heading = React.createElement('h1', {id: 'Head'}, "Anindyo Bose");
+
+// JSX way of creating element
+const jsx = <h1 id="Head">Anindyo Bose JSX</h1>;
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(parent);
+root.render(jsx);
