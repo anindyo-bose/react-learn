@@ -19,3 +19,22 @@
 - Diferent build for dev and prod bundles
 
 parceljs.org
+
+/**
+ * Header component
+ *  - Logo
+ *  - Navigation
+ * Body
+ *  - Search
+ *  - ResturantContainer
+ *    - ResturantCard
+ *    - Image
+ *    - Name
+ *    - Rating
+ *    - Address
+ * Footer
+ *  - CopyRight
+ *  - Links
+ *  - Address
+ *  - Contact
+ */

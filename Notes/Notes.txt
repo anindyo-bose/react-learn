@@ -21,3 +21,31 @@ wrapping the const/variable/functional component with the curly braces helps not
 
 props: property is something that we can pass to the component.
 props are just normal arguement to a function.
+
+//Config driven UI- controlling the UI accoding the Config (eg- Location, place)
+
+// Optional chaning is adding ? to the variable when it's output is unknown
+
+Key Prop - Each of the Item should have a unique Key. we have to give Key every time we are using map or loop ro call a functional component.
+React Optimizes it's render cycle. eg:- if 10 object is rendered and one is added to it, then without key it will re render the each object as react is not aware of the exact place where it's going to get added.
+index should not be used as key 
+
+Two types of export -> Default & Named 
+
+Hooks -> Its a normal JS Utility Function written in react. 
+UseState() UseEffect() - Most Important Hooks.
+
+UseState - > Use to create the state variable - > const [listOfResturant, setListOfResturant] = useState(default value/Null);
+UseEffect - > Use to perform side effects in functional components
+UseContext - > 
+UseReducer
+UseRef
+
+reconsiliation Algorithm /React Fibre - >  new way to find the diff and update the dom. The ability to split rendering work into chunks and spreadit over multipleframes
+
+Virtual Dom, is the react/js object of the functional component. is the representation of the Actual Dom, 
+with the help of Diff algo in react the changes in rhe virtual dom of the same component is identified post an event and update the actual dom on next render cycle.
+
+
+
+// React Keys, Throtteling, Debounce, 

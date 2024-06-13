@@ -1,0 +1,8 @@
+Call Apply and bind->
+this is a function borrowing method, where we can borrow the method of one object and use it in another object.
+call method is used to call a method of an object with another object as an argument.
+
+eg-  obj1.method.call(obj2, arg1, arg2, arg3);
+    obj1.method.apply(obj2, [arg1, arg2, arg3]);
+    obj1.method.bind(obj2, arg1, arg2, arg3); // it binds the method with the object and returns copy of it that can be invoked later.
+    
