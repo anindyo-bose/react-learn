@@ -8,7 +8,7 @@ Multiple line jsx is needed to wrap between round brackets, That is how babel un
 JSX=>Babel transpiles it to react.createelement => ReactElement-Js-Object => HTMLElement(render)
 
 React Component -> 
- Class Based Component // old way 
+ Class Based Component // old way need to extend React.Component
  Functional Component // new way
 
 React Functional Component is a Javascript Function
@@ -34,18 +34,39 @@ Two types of export -> Default & Named
 
 Hooks -> Its a normal JS Utility Function written in react. 
 UseState() UseEffect() - Most Important Hooks.
+never create any state variable inside conditional blocks
 
 UseState - > Use to create the state variable - > const [listOfResturant, setListOfResturant] = useState(default value/Null);
-UseEffect - > Use to perform side effects in functional components
+It is used to call local state variable inside the functional component
+
+UseEffect - > Use to perform side effects in functional components, Use effect is called once the render cycle is finished
+if no dependency array then use effect is called every render.
+if the dependency array is empty then use effect is called on initial render and just once
+if the dependency array has element then useeffect is called whenever the array element is updated
+
 UseContext - > 
 UseReducer
 UseRef
+
+useRouterError(react-router-dom)
+useParam(react-router-dom)
 
 reconsiliation Algorithm /React Fibre - >  new way to find the diff and update the dom. The ability to split rendering work into chunks and spreadit over multipleframes
 
 Virtual Dom, is the react/js object of the functional component. is the representation of the Actual Dom, 
 with the help of Diff algo in react the changes in rhe virtual dom of the same component is identified post an event and update the actual dom on next render cycle.
 
+
+
+Lifecycle ->
+Consutructor -> Render() -> componentDidMount -> componentDidUpdate -> componentWillUpdate
+
+
+componentDidMount is used to make API calls
+
+React Common Lifecycle consist of -> Render Phase (Consutructor -> Render()) & Commit Phase (React update DOM & componentDidMount)
+first all the Render phase will be batched anc completed and then will got for the commit phase
+render phase is quicker than the comit phase, comit phase takes time
 
 
 // React Keys, Throtteling, Debounce, 
